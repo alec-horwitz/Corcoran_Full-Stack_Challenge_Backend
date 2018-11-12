@@ -2,14 +2,17 @@ Disclaimer:
 --------------------
 This code and readme was implemented and tested macOS High Sierra Version 10.13.6 exclusively and as such compatibility with other operating systems is unknown.
 
+
+
 Requires:
 --------------------
  * Ruby 2.3.3 or greater
+ * postgres.app from https://postgresapp.com/ or an equivalent PostgreSQL installation
+
 
 
 Setup:
 ------------------------
-
 Fork this repository and clone it to your computer.
 
 Open up a terminal window and do the following:
@@ -25,9 +28,9 @@ Navigate to the directory that this read me resides in and run the following com
 Make sure it is running on port 3000 and you are ready to go.
 
 
+
 Endpoints:
 ---------------------
-
 Now you can make the following api requests:
 
 * Making a get request to "http://localhost:3000/api/v1/presidents" will give you a unsorted hash of all presidents.
@@ -35,3 +38,11 @@ Now you can make the following api requests:
 * Making a get request to "http://localhost:3000/api/v1/presidents/ascending" will give you a hash of all presidents sorted in ascending order by name.
 
 * Making a get request to "http://localhost:3000/api/v1/presidents/descending" will give you a hash of all presidents sorted in descending order by name.
+
+
+
+Try it live:
+---------------------
+The live version of this backend can be found here: https://corcoran-pres-back.herokuapp.com/
+
+The live version of the frontend can be found here: https://corcoran-pres-front.herokuapp.com/
